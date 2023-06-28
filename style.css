@@ -1,2 +1,15 @@
-nav {
+.bg-img1 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(hinh-nen-may-tinh-fantasy-4k-blogchiasekienthuc.com-1-768x432.jpeg);
+}
+.bg-img2 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(hinh-nen-may-tinh-fantasy-4k-blogchiasekienthuc.com-1-768x432.png);
+}
+.bg-img3 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(hinh-nen-may-tinh-fantasy-4k-blogchiasekienthuc.com-6-768x384.jpg);
 }

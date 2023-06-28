@@ -3,64 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel page</title>
+    <link
+      rel="canonical"
+      href="http://getbootstrap.com/docs/5.0/examples/caruosel/"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container">
-        <a href="#" class="navbar-brand">Frontend Boostcamp</a>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Carousel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="nabarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggle-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+              </li>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#learn" class="navlink">What You'll learn</a>
-            </li>
-            <li class="nav-item">
-              <a href="#question" class="navlink">Question</a>
-            </li>
-            <li class="nav-item">
-              <a href="#intructors" class="navlink">Intructors</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section class="bg-dark text-light p-5 text-center text-sm-start">
-      <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div>
-            <h1>Become a web <span class="text-warning">deverloper</span></h1>
-
-            <p class="lead my-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae accusantium ullam, quidem fugit voluptatem ex itaque?
-              Iure suscipit omnis similique voluptatum excepturi quam veritatis
-              at, laudantium laborum magnam delectus tenetur.
-            </p>
-            <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link disabled"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >disabled</a
+                >
+              </li>
+            </ul>
+            <form class="d-plex">
+              <input
+                type="text"
+                class="form-contro me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
+        </div>
+      </nav>
+    </header>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-img1">
           <img
-            class="img-fluid w-50 d-none d-sm-block"
-            src="img/7233300dfe0eca0a4507b29b5e75a77f.jpg"
-            alt=""
+            src="hinh-nen-may-tinh-fantasy-4k-blogchiasekienthuc.com-1-768x432.jpeg"
+            class="d-block w-100"
           />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline</h1>
+              <p>
+                Some representative placeholder content for second slide of the
+                carousel
+              </p>
+              <p><a href="#" class="btn btn-lg btn-primary">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-img2">
+          <img
+            src="hinh-nen-may-tinh-fantasy-4k-blogchiasekienthuc.com-1-768x432.png"
+            class="d-block w-100"
+          />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure</h1>
+              <p>
+                Some representative placeholder content for the third slide of
+                this carousel
+              </p>
+              <p>
+                <a href="#" class="btn btn-lg btn-primary">Browse gallery</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-img3">
+          <img
+            src="hinh-nen-may-tinh-fantasy-4k-blogchiasekienthuc.com-6-768x384.jpg"
+            class="d-block w-100"
+          />
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure</h1>
+              <p>
+                Some representative placeholder content for the third slide of
+                this carousel
+              </p>
+              <p>
+                <a href="#" class="btn btn-lg btn-primary">Browse gallery</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+
+      <div class="carousel-indicator">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-label="Slide 1"
+          aria-current="true"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+          class=""
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+          class=""
+        ></button>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
